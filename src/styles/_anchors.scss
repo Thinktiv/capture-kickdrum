@@ -1,0 +1,100 @@
+
+.anchors{
+	position: absolute;
+	top: vw(px, 364);
+	left: vw(px, 1218);
+	position: fixed;
+	z-index: 100;
+}
+
+.tooltip{
+	font-size: vw(px,14);
+	width: vw(px, 100);
+	display: inline-block;
+	margin-bottom: vw(px,1);
+	bottom: vw(px,4);
+	text-align: right;
+	transition: .5s;
+	opacity: 0;
+	position: relative;
+	right: vw(px, 90);
+	transform: translateX(vw(px,0));
+}
+
+// .tooltipWrapper{
+// 	position: absolute;
+// 	right: vw(px, 21);
+// 	bottom: vw(px,3);
+// 	text-align: right;
+// 	color: $gray;
+// 	font-size: vw(px, 14);
+// 	.tooltip{
+// 		display: inline-block;
+// 		margin-bottom: vw(px,1);
+// 		transition: 1s;
+// 		opacity: 0;
+// 		transform: translateX(vw(px,10));
+// 	}
+// }
+.boxes{
+	width: vw(px,12);
+	height: vw(px,12);
+	background-color: $gray;
+	margin-bottom: vw(px,8);
+	border-radius: vw(px, 3);
+	cursor: pointer;
+	color: $gray;
+}
+
+.currentBlue{
+	background-color: $blue;
+}
+.currentPink{
+	background-color: $pink;
+}
+
+.currentYellow{
+	background-color: $yellow;
+}
+
+.currentGray{
+	background-color: $darkGray;
+}
+
+
+.box1:hover{
+	background-color: $darkGray;
+	box-shadow: vw(px, 2) vw(px, 2) vw(px, 2) $gray;
+	.tooltip.one{
+		opacity: 1;
+		transform: translateX(vw(px,-20));
+	}
+}
+
+.box2:hover{
+	background-color: $blue;
+	box-shadow: vw(px, 2) vw(px, 2) vw(px, 2) $gray;
+	.tooltip.two{
+		opacity: 1;
+		transform: translateX(vw(px,-20));
+	}
+}
+
+.box3:hover{
+	background-color: $pink;
+	box-shadow: vw(px, 2) vw(px, 2) vw(px, 2) $gray;
+	.tooltip.three{
+		opacity: 1;
+		transform: translateX(vw(px,-20));
+	}
+}
+
+.box4:hover{
+	background-color: $yellow;
+	box-shadow: vw(px, 2) vw(px, 2) vw(px, 2) $gray;
+	.tooltip.four{
+		opacity: 1;
+		transform: translateX(vw(px,-20));
+	}
+}
+
