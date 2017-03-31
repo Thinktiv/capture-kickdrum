@@ -22,8 +22,8 @@ hosted on localhost: 4000
 * Header breaks when resizing. You have to overide the squarespace styles.
 * There is a flicker in the beginning right before the page loads. You can see the old template before it disappears.
 
-### vw
-all vw are done like this:
+### View widths
+all view widths are done like this:
 ```
 vw(px, 24)
 ```
@@ -37,8 +37,9 @@ padding: vw(px, 24) vw(px, 24) vw(px, 24) vw(px, 24);
 ```
 All of the above examples are valid.
 
-This project isn't using breakpoints but if that changes in the future you can set the breakpoints in variablesandmixins.scss
-So padding at breakpoint 1 would be:
+This project isn't using breakpoints but if that changes in the future, you can set the breakpoints in the variablesandmixins.scss file
+
+Padding at breakpoint 1 would be:
 ```
 padding: vw(bp1, 24);
 ```
