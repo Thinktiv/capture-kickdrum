@@ -40,7 +40,7 @@ padding: vw(bp2, 24)
 
 * squarespace-ref.js shows the current code in squarespace with comments
 
-#### bundles.js
+### bundles.js
 * Everything (styles, fonts, images) gets compiled into the bundle.js file which is located in dist/bundle.js. 
 * Only the html and bundle.js needs to get updated when making changes.
 * Remember to always run 'npm run build' before copying the bundle.js file. This make sure your changes are saved.
