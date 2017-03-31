@@ -16,8 +16,33 @@ hosted on localhost: 4000
 * Everything (styles, fonts, images) gets compiled into the bundle.js file which is located in dist/bundle.js. 
 * Only the html and bundle.js needs to get updated when making changes.
 * Remember to always run 'npm run build' before copying the bundle.js file. This make sure your changes are saved.
-* Bundle.js is a huge file so its needs to be hosted somehwere. I used RawGit, but this may stop working if this repo becomes private.
+* Bundle.js is a huge file so its needs to be hosted somehwere. I used RawGit, but this may stop working if the repo becomes private.
 
 ### Issues
 * Header breaks when resizing. You have to overide the squarespace styles.
 * There is a flicker in the beginning right before the page loads. You can see the old template before it disappears.
+
+### vw
+all vw are done like this:
+```
+vw(px, 24)
+```
+its the same as 24vw at 1280
+
+you can it write like this:
+```
+padding: vw(px, 24);
+padding: vw(px, 24) vw(px, 24);
+padding: vw(px, 24) vw(px, 24) vw(px, 24) vw(px, 24);
+```
+All of the above examples are valid.
+
+This project isn't using breakpoints but if that changes in the future you can set the breakpoints in variablesandmixins.scss
+So padding at breakpoint 1 would be:
+```
+padding: vw(bp1, 24);
+```
+Padding at breakpoint 2:
+```
+padding: vw(bp2, 24)
+```
