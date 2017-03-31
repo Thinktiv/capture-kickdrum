@@ -22,8 +22,8 @@ hosted on localhost: 4000
 * Header breaks when resizing. You have to overide the squarespace styles.
 * There is a flicker in the beginning right before the page loads. You can see the old template before it disappears.
 
-### View widths
-all view widths are done like this:
+### Viewport Widths
+all viewport widths are done like this:
 ```
 vw(px, 24)
 ```
