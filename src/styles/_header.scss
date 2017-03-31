@@ -1,58 +1,58 @@
 /* styles to recreate the header */
 
-#header{
-	    padding: vw(px,0 20);
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    width: 100%;
-    line-height: 1em;
-    background-color: #fafafa;
-    -moz-osx-font-smoothing: auto;
-    -webkit-font-smoothing: subpixel-antialiased;
-    position: relative;
-}
-#logoWrapper{
-	display: table-cell;
-    vertical-align: middle;
-    width: vw(px,140);
-}
+// #header{
+// 	padding: vw(px,0 20);
+//     -webkit-box-sizing: border-box;
+//     -moz-box-sizing: border-box;
+//     box-sizing: border-box;
+//     z-index: 1000;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     line-height: 1em;
+//     background-color: #fafafa;
+//     -moz-osx-font-smoothing: auto;
+//     -webkit-font-smoothing: subpixel-antialiased;
+//     position: relative;
+// }
+// #logoWrapper{
+// 	display: table-cell;
+//     vertical-align: middle;
+//     width: vw(px,140);
+// }
 
-#logoImage{
-	width: vw(px,140);
-	margin: 0;
-    font-size: 0;
-    max-width: 100%;
-}
+// #logoImage{
+// 	width: vw(px,140);
+// 	margin: 0;
+//     font-size: 0;
+//     max-width: 100%;
+// }
 
-#header #mainNavWrapper{
-	position: relative;
-    z-index: 1000;
-}
+// #header #mainNavWrapper{
+// 	position: relative;
+//     z-index: 1000;
+// }
 
-.headerNav{
-	text-align: right;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: right;
-}
+// .headerNav{
+// 	text-align: right;
+//     display: table-cell;
+//     vertical-align: middle;
+//     text-align: right;
+// }
 
-.header-inner{
-	    padding: vw(px, 20);
-    display: table;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-animation: header-anim 1s ease-in-out;
-    animation: header-anim 1s ease-in-out;
-}
+// .header-inner{
+// 	    padding: vw(px, 20);
+//     display: table;
+//     width: 100%;
+//     -webkit-box-sizing: border-box;
+//     -moz-box-sizing: border-box;
+//     box-sizing: border-box;
+//     -webkit-animation: header-anim 1s ease-in-out;
+//     animation: header-anim 1s ease-in-out;
+// }
 
-.collection{
-	display: inline-block;
-    vertical-align: middle;
-    margin: 0;
-}
+// .collection{
+// 	display: inline-block;
+//     vertical-align: middle;
+//     margin: 0;
+// }
