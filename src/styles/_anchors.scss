@@ -1,6 +1,5 @@
 
 .anchors{
-	position: absolute;
 	top: vw(px, 364);
 	left: vw(px, 1218);
 	position: fixed;
@@ -11,32 +10,18 @@
 	font-size: vw(px,14);
 	width: vw(px, 100);
 	display: inline-block;
-	margin-bottom: vw(px,1);
-	bottom: vw(px,6);
+	bottom: vw(px,8);
 	text-align: right;
 	transition: .5s;
 	opacity: 0;
-	position: relative;
+	// position: relative;
 	right: vw(px, 90);
 	transform: translateX(vw(px,0));
 }
 
-// .tooltipWrapper{
-// 	position: absolute;
-// 	right: vw(px, 21);
-// 	bottom: vw(px,3);
-// 	text-align: right;
-// 	color: $gray;
-// 	font-size: vw(px, 14);
-// 	.tooltip{
-// 		display: inline-block;
-// 		margin-bottom: vw(px,1);
-// 		transition: 1s;
-// 		opacity: 0;
-// 		transform: translateX(vw(px,10));
-// 	}
-// }
+
 .boxes{
+	position: relative;
 	width: vw(px,12);
 	height: vw(px,12);
 	background-color: $gray;
@@ -44,6 +29,17 @@
 	border-radius: vw(px, 3);
 	cursor: pointer;
 	color: $gray;
+}
+
+.box1,.box2,.box3,.box4{
+	&:before{
+		content: '';
+		opacity: 0;
+		transition: .5s;
+		font-size: vw(px,14);
+		transform: translateX(vw(px,30));
+	}
+
 }
 
 .currentBlue{
@@ -65,36 +61,60 @@
 .box1:hover{
 	background-color: $darkGray;
 	box-shadow: vw(px, 2) vw(px, 2) vw(px, 2) $gray;
-	.tooltip.one{
+	&:before{
+		content: 'Intros';
+		position: absolute;
+		top: vw(px, -3);
+		right:vw(px,-40);
+		height: vw(px,50);
+		width: vw(px,100);
+		transform: translateX(vw(px,0));
 		opacity: 1;
-		transform: translateX(vw(px,-20));
 	}
 }
 
 .box2:hover{
 	background-color: $blue;
 	box-shadow: vw(px, 2) vw(px, 2) vw(px, 2) $gray;
-	.tooltip.two{
+	&:before{
+		content: 'Capture';
+		position: absolute;
+		top: vw(px, -3);
+		right:vw(px,-25);
+		height: vw(px,50);
+		width: vw(px,100);
+		transform: translateX(vw(px,0));
 		opacity: 1;
-		transform: translateX(vw(px,-20));
 	}
 }
 
 .box3:hover{
 	background-color: $pink;
 	box-shadow: vw(px, 2) vw(px, 2) vw(px, 2) $gray;
-	.tooltip.three{
+	&:before{
+		content: 'Collaborate';
+		position: absolute;
+		top: vw(px, -3);
+		right:vw(px,-5);
+		height: vw(px,50);
+		width: vw(px,100);
+		transform: translateX(vw(px,0));
 		opacity: 1;
-		transform: translateX(vw(px,-20));
 	}
 }
 
 .box4:hover{
 	background-color: $yellow;
 	box-shadow: vw(px, 2) vw(px, 2) vw(px, 2) $gray;
-	.tooltip.four{
+	&:before{
+		content: 'Connect';
+		position: absolute;
+		top: vw(px, -3);
+		right:vw(px,-23);
+		height: vw(px,50);
+		width: vw(px,100);
+		transform: translateX(vw(px,0));
 		opacity: 1;
-		transform: translateX(vw(px,-20));
 	}
 }
 

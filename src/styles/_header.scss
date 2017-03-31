@@ -1,4 +1,4 @@
-/* styles to recreate the header */
+// /* styles to recreate the header */
 
 // #header{
 // 	padding: vw(px,0 20);
@@ -14,41 +14,138 @@
 //     -moz-osx-font-smoothing: auto;
 //     -webkit-font-smoothing: subpixel-antialiased;
 //     position: relative;
-// }
-// #logoWrapper{
-// 	display: table-cell;
-//     vertical-align: middle;
-//     width: vw(px,140);
+//     background-color: transparent;
+
+//     nav .active>.folder-toggle{
+//         color: #4781ff;
+//     }
+
 // }
 
-// #logoImage{
-// 	width: vw(px,140);
-// 	margin: 0;
-//     font-size: 0;
-//     max-width: 100%;
+// .folder-toggle{
+
+//     font-family: "proxima-nova";
+//     font-size: vw(px,13);
+//     text-transform: uppercase;
+//     text-decoration: none;
+//     letter-spacing: vw(px,2);
+//     font-weight: 600;
+//     font-style: normal;
+//     line-height: 1em;
 // }
 
-// #header #mainNavWrapper{
-// 	position: relative;
+#logoWrapper{
+	display: table-cell;
+    vertical-align: middle;
+    width: vw(px,140);
+}
+
+#logoImage{
+	width: vw(px,140);
+	margin: 0;
+    font-size: 0;
+    max-width: 100%;
+}
+
+#header #mainNavWrapper{
+	position: relative;
+    z-index: 1000;
+}
+
+#headerNav{
+	text-align: right;
+	box-sizing: border-box;
+    display: table-cell;
+    vertical-align: middle;
+	nav a, #headerNav nav a, nav .folder-toggle{
+	display: block;
+    padding: .5em 1.5em;
+	font-family: "proxima-nova";
+    font-size: vw(px,13);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: vw(px,2);
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1em;
+    color: rgba(84,84,84,.9);
+	}
+}
+
+
+.header-inner{
+	padding: vw(px, 20);
+    display: table;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-animation: header-anim 1s ease-in-out;
+    animation: header-anim 1s ease-in-out;
+}
+
+ #headerNav nav>div:not(.folder):last-child a:hover{
+    background-color: transparent;
+    color: $blue;
+ }
+
+ .force-mobile-nav #mainNavWrapper{
+    z-index: 100;
+    position: relative;
+    transform: initial;
+    width: 100%;
+ }
+
+ .force-mobile-nav .mobile-nav-toggle, .mobile-nav-toggle.fixed-nav-toggle{
+    display: none;
+ }
+
+// .subnav{
+// 	.right{
+// 		left: auto;
+//     	right: -.5em;
+// 	}
+// 	div{
+// 	opacity: 0;
+//     padding: 0;
+//     -webkit-transition: opacity .05s 0s ease-in-out;
+//     -moz-transition: opacity .05s 0s ease-in-out;
+//     -ms-transition: opacity .05s 0s ease-in-out;
+//     -o-transition: opacity .05s 0s ease-in-out;
+//     transition: opacity .05s 0s ease-in-out;
+// 	}
+// 	background-color: #fafafa;
+// 	text-align: left;
+//     padding: 1em 0;
+//     display: inline-block;
+//     position: absolute;
+//     top: 100%;
+//     left: -.5em;
 //     z-index: 1000;
-// }
-
-// .headerNav{
-// 	text-align: right;
-//     display: table-cell;
-//     vertical-align: middle;
-//     text-align: right;
-// }
-
-// .header-inner{
-// 	    padding: vw(px, 20);
-//     display: table;
-//     width: 100%;
-//     -webkit-box-sizing: border-box;
+//     font-size: vw(px,13);
 //     -moz-box-sizing: border-box;
+//     -webkit-box-sizing: border-box;
 //     box-sizing: border-box;
-//     -webkit-animation: header-anim 1s ease-in-out;
-//     animation: header-anim 1s ease-in-out;
+//     white-space: nowrap;
+//     -webkit-transform: scale(1,0);
+//     -moz-transform: scale(1,0);
+//     -ms-transform: scale(1,0);
+//     -o-transform: scale(1,0);
+//     transform: scale(1,0);
+//     -webkit-transform-origin: 0 0;
+//     -moz-transform-origin: 0 0;
+//     -ms-transform-origin: 0 0;
+//     -o-transform-origin: 0 0;
+//     transform-origin: 0 0;
+//     -webkit-transition: -webkit-transform .14s 0s ease-in-out;
+//     -moz-transition: -moz-transform .14s 0s ease-in-out;
+//     -ms-transition: -ms-transform .14s 0s ease-in-out;
+//     -o-transition: -o-transform .14s 0s ease-in-out;
+//     transition: transform .14s 0s ease-in-out;
+// }
+
+// .folder{
+//     position: relative;
 // }
 
 // .collection{
