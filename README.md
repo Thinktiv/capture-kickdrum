@@ -38,13 +38,14 @@ padding: vw(bp2, 24)
 ```
 
 
-* squarespace-ref.js shows the current code in squarespace with comments
+
 
 ### bundles.js
 * Everything (styles, fonts, images) gets compiled into the bundle.js file which is located in dist/bundle.js. 
 * Only the html and bundle.js needs to get updated when making changes.
 * Remember to always run 'npm run build' before copying the bundle.js file. This make sure your changes are saved.
 * Bundle.js is a huge file so its needs to be hosted somehwere. I used RawGit, but this may stop working if the repo becomes private.
+* squarespace-ref.js shows the current code in squarespace with comments
 
 ### Issues
 * Header breaks when resizing. You have to overide the squarespace styles.
