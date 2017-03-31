@@ -27,7 +27,7 @@ All viewport widths are done like this:
 ```
 vw(px, 24)
 ```
-It's the same as 24vw at 1280
+It's the same as 24vw at 1280px
 
 You can it write like this:
 ```
