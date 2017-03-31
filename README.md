@@ -23,13 +23,13 @@ hosted on localhost: 4000
 * There is a flicker in the beginning right before the page loads. You can see the old template before it disappears.
 
 ### Viewport Widths
-all viewport widths are done like this:
+All viewport widths are done like this:
 ```
 vw(px, 24)
 ```
-its the same as 24vw at 1280
+It's the same as 24vw at 1280
 
-you can it write like this:
+You can it write like this:
 ```
 padding: vw(px, 24);
 padding: vw(px, 24) vw(px, 24);
