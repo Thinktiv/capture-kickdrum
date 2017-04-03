@@ -91,7 +91,40 @@
     float: left;  
   }
 
-
-
-
+  .right-arrow {
+    position: absolute;
+    top: vw(px, 354);
+    background-image: url('../images/right-arrow.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: vw(px,48);
+    height: vw(px, 48);
+    left: vw(px, 1218);
+    cursor: pointer;
+    &:hover{
+      background-image: url('../images/right-arrow-hover.png');
+      background-size:contain;
+      background-repeat: no-repeat;
+      width: vw(px,48);
+      height: vw(px,48);
+    }
+  }
+  .left-arrow {
+    position: absolute;
+    top: vw(px, 354);
+    left: vw(px, 30);
+    background-image: url('../images/left-arrow.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: vw(px,48);
+    height: vw(px,48);
+    cursor: pointer;
+    &:hover{
+      background-image: url('../images/left-arrow-hover.png');
+      background-size:contain;
+      background-repeat: no-repeat;
+      width: vw(px,48);
+      height: vw(px,48);
+    }
+  }
 }

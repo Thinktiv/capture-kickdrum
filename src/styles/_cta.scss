@@ -1,0 +1,27 @@
+#cta{
+	padding-top: vw(px, 162);
+  	background-color: $lightGray;
+  	position: relative;
+  	padding-bottom: vw(px, 119);
+  	// width: 100%;
+
+  	.cta-btn{
+  		width: vw(px,235);
+  		height: vw(px,54);
+  		background-color: $blue;
+  		color: $white;
+  		border: none;
+  		font-family: $SF-M;
+  		border-radius: vw(px, 3);
+  		font-size: vw(px,24);
+  		padding: vw(20);
+  		margin: 0 auto;
+  		display: block;
+  		outline: none;
+  		&:hover{
+  			background-color: $light-blue;
+  			box-shadow: vw(px,3,3,3) $gray;
+  			transition: .2s;
+  		}
+  	}
+}

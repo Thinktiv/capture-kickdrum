@@ -36,6 +36,15 @@
          url('../fonts/sf-ui/SFUITextRegular.svg#SFUITextRegular') format('svg');
 }
 @font-face {
+    font-family: 'SFUITextMedium';
+    src: url('../fonts/sf-ui/SFUITextMedium.eot');
+    src: url('../fonts/sf-ui/SFUITextMedium.eot') format('embedded-opentype'),
+         url('../fonts/sf-ui/SFUITextMedium.woff2') format('woff2'),
+         url('../fonts/sf-ui/SFUITextMedium.woff') format('woff'),
+         url('../fonts/sf-ui/SFUITextMedium.ttf') format('truetype'),
+         url('../fonts/sf-ui/SFUITextMedium.svg#SFUITextMedium') format('svg');
+}
+@font-face {
     font-family: 'SFUITextSemibold';
     src: url('../fonts/sf-ui/SFUITextSemibold.eot');
     src: url('../fonts/sf-ui/SFUITextSemibold.eot') format('embedded-opentype'),

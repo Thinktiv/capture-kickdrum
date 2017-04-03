@@ -6,6 +6,10 @@
     top: vw(px, 523);
   }
 
+  .selected {
+    
+  }
+
   .trello-icon {
     background-image: url('../images/trello-icon.png');
     background-size: contain;
@@ -14,8 +18,17 @@
     height: vw(px, 56);
     float: left;
     cursor: pointer;
+    &.active{
+      background-image: url('../images/trello-icon-hover.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: vw(px, 56);
+      height: vw(px, 56);
+      float: left;
+      transition: .5s;
+    }
 
-    &:hover {
+    &:hover{
       background-image: url('../images/trello-icon-hover.png');
       background-size: contain;
       background-repeat: no-repeat;
@@ -34,7 +47,15 @@
     height: vw(px, 56);
     float: left;
     cursor: pointer;
-
+    &.active{
+      background-image: url('../images/hipchat-icon-hover.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: vw(px, 56);
+      height: vw(px, 56);
+      float: left;
+      transition: .5s;
+    }
     &:hover {
       background-image: url('../images/hipchat-icon-hover.png');
       background-size: contain;
@@ -54,6 +75,15 @@
     height: vw(px, 56);
     float: left;
     cursor: pointer;
+    &.active {
+      background-image: url('../images/bitbucket-icon-hover.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: vw(px, 56);
+      height: vw(px, 56);
+      float: left;
+      transition: .5s;
+    }
     &:hover {
       background-image: url('../images/bitbucket-icon-hover.png');
       background-size: contain;
@@ -73,6 +103,15 @@
     height: vw(px, 56);
     float: left;
     cursor: pointer;
+    &.active {
+      background-image: url('../images/jira-core-icon-hover.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: vw(px, 56);
+      height: vw(px, 56);
+      float: left;
+      transition: .5s;
+    }
     &:hover {
       background-image: url('../images/jira-core-icon-hover.png');
       background-size: contain;
@@ -92,6 +131,15 @@
     height: vw(px, 56);
     float: left;
     cursor: pointer;
+    &.active {
+      background-image: url('../images/confluence-icon-hover.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: vw(px, 56);
+      height: vw(px, 56);
+      float: left;
+      transition: .5s;
+    }
     &:hover {
       background-image: url('../images/confluence-icon-hover.png');
       background-size: contain;
@@ -111,6 +159,15 @@
     height: vw(px, 56);
     float: left;
     cursor: pointer;
+    &.active {
+      background-image: url('../images/jira-service-icon-hover.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: vw(px, 56);
+      height: vw(px, 56);
+      float: left;
+      transition: .5s;
+    }
     &:hover {
       background-image: url('../images/jira-service-icon-hover.png');
       background-size: contain;
