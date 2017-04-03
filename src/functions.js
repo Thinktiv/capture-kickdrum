@@ -3,7 +3,6 @@ $(document).ready(function() {
   /*function for slide animation */
   //add css transition after page load
   $('.slide').css('transition', '1s');
- console.log('test');
   //grab all icons
   const icons = document.querySelectorAll('.icons div');
 
@@ -81,7 +80,6 @@ $(document).ready(function() {
     });
 
     //update index
-    console.log(index)
       if(index <= 0 ){
         index = $('.icons div').length;
     }
