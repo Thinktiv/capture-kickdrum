@@ -76,7 +76,6 @@
 }
 
 .link {
-    padding: .5em 1.5em;
     a {
         font-family: proxima-nova;
         font-size: 13px;
@@ -87,9 +86,10 @@
         line-height: 1em;
         color: rgba(84, 84, 84, 0.901961);
         text-decoration: none;
+        padding: .5em 1.5em;
 
     }
-    &:hover a {
+    &:hover > a {
       color: $blue;
     }
 }
