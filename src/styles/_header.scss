@@ -84,6 +84,8 @@
     animation: header-anim 1s ease-in-out;
 }
 
+
+
  #headerNav nav>div:not(.folder):last-child a:hover{
     background-color: transparent;
     color: $blue;
@@ -96,6 +98,17 @@
 .force-mobile-nav #mainNavWrapper nav{
     display: block;
     padding: 0;
+}
+
+.mobile-nav-toggle{
+    display: none;
+}
+
+#mainNavigation > .collection{
+    display: inline-block;
+}
+#headerNav nav .active>a{
+    padding: 1em 1.5em; 
 }
 
 .force-mobile-nav #mainNavWrapper nav div a{
@@ -112,6 +125,25 @@
 
  .force-mobile-nav .mobile-nav-toggle, .mobile-nav-toggle.fixed-nav-toggle{
     display: none;
+ }
+  .nav-wrapper .folder .subnav{
+    padding: 1em 0;
+    display: inline-block;
+  }
+ .right .subnav{
+    visibility: hidden;
+ }
+
+ #headerNav nav .subnav{
+    background-color: transparent;
+    text-align: left;
+    position: absolute;
+    right: 0;
+ }
+
+ #contact a {
+    color: #000;
+    background-color: transparent;
  }
 
 // .subnav{
