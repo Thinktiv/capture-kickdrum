@@ -35,7 +35,7 @@
 }
 
 #logoImage {
-    width: vw(px, 140);
+    width: 140px;
     margin: 0;
     font-size: 0;
     max-width: 100%;
@@ -54,6 +54,7 @@
 
 .headerWrap {
     padding: 0 20px;
+    padding-top: 10px;
 }
 
 #headerNav {
