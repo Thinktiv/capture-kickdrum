@@ -35,128 +35,281 @@
 // }
 
 #logoWrapper{
-	display: table-cell;
+ display: table-cell;
     vertical-align: middle;
     width: vw(px,140);
 }
-
 #logoImage{
-	width: vw(px,140);
-	margin: 0;
+ width: vw(px,140);
+ margin: 0;
     font-size: 0;
     max-width: 100%;
 }
 
-#header #mainNavWrapper{
-	position: relative;
-    z-index: 1000;
+.subnav{
+    display: none;
 }
 
+.plan:hover .subnav {
+    display: block;
+}
+.headerWrap{
+    padding: 0 20px;
+}
 #headerNav{
-	text-align: right;
-	box-sizing: border-box;
     display: table-cell;
     vertical-align: middle;
-	nav a, #headerNav nav a, nav .folder-toggle{
-	display: block;
-    padding: .5em 1.5em;
-	font-family: "proxima-nova";
-    font-size: vw(px,13);
+    width: 100%;
+    text-align: right;
+}
+
+.subnav{
+    position: absolute;
+    text-align: left;
+    background-color: $white;
+    padding: 1em 0px;
+    top: 45px;
+    width: 400px;
+    z-index: 100;
+    right: 10px;
+    // left: vw(px,500);
+}
+
+.link{
+padding: .5em 1.5em;
+    a{
+    font-family: proxima-nova;
+    font-size: 13px;
     text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: vw(px,2);
+    letter-spacing: 2px;
     font-weight: 600;
     font-style: normal;
     line-height: 1em;
-    color: rgba(84,84,84,.9);
-	}
+    color: rgba(84, 84, 84, 0.901961);
+    text-decoration: none;
+
+    &:hover{
+        color:$blue;
+    }
+    }
 }
 
-
-.header-inner{
-	padding: vw(px, 20);
-    display: table;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-animation: header-anim 1s ease-in-out;
-    animation: header-anim 1s ease-in-out;
+#mainNav{
+  padding: 20px 0px;
 }
 
-.nav-wrapper nav>div {
-    vertical-align: inherit;
-}
-
- #headerNav nav>div:not(.folder):last-child a:hover{
-    background-color: transparent;
-    color: $blue;
- }
-.force-mobile-nav #mainNavWrapper nav div{
-    // display: inline-block;
-    // vertical-align: middle;
-    margin: 0;
-}
-.force-mobile-nav #mainNavWrapper nav{
-    display: block;
-    padding: 0;
-}
-
-.mobile-nav-toggle{
-    display: none;
-}
-
-#mainNavigation > .collection{
-    display: inline-block;
-}
-#headerNav nav .active>a{
-    padding: 1em 1.5em; 
-}
-
-.force-mobile-nav #mainNavWrapper nav div a{
+.capture{
+    font-family: proxima-nova;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1em;
+    color: rgba(84, 84, 84, 0.901961);
+    text-decoration: none;
     padding: .5em 1.5em;
+    a{
+        color: rgba(84, 84, 84, 0.901961);
+    }
+    &:hover a{
+        color: $blue;
+    }
 }
- .force-mobile-nav #mainNavWrapper{
-    z-index: 100;
-    position: inherit;
-    transform: initial;
-    width: 100%;
-    background-color: transparent;
-    text-align: right;
- }
- .force-mobile-nav #mainNavWrapper nav div a, .force-mobile-nav #mainNavWrapper nav div .folder-toggle{
-    padding: .5em 1.5em;
- }
+
+.pov{
+    font-family: proxima-nova;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1em;
+    color: rgba(84, 84, 84, 0.901961);
+    text-decoration: none;
+    padding: 1em 1.5em;
+    a{
+        color: $blue;
+
+    }
 
 
- .force-mobile-nav .mobile-nav-toggle, .mobile-nav-toggle.fixed-nav-toggle{
-    display: none;
- }
-  .nav-wrapper .folder .subnav{
-    padding: 1em 0;
-    display: inline-block;
-  }
- .right .subnav{
-    visibility: hidden;
- }
+}
 
- .folder{
+.plan{
+    font-family: proxima-nova;
     position: relative;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1em;
+    color: rgba(84, 84, 84, 0.901961);
+    text-decoration: none;
+    padding: .5em 1.5em;
+    a{
+         color: rgba(84, 84, 84, 0.901961);
+    }
+    &:hover > a{
+        color: $blue;
+    }
+}
+
+.contact {
+    font-family: proxima-nova;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 13px;
+    margin-left: 1em;
+    display: block;
+    -webkit-font-smoothing: subpixel-antialiased;
+    color: rgba(84, 84, 84, 0.901961);
+    text-decoration: none;
+    transition: background-color 0.1s ease-in-out 0s, color 0.1s ease-in-out 0s;
+    padding: 1em 1.5em !important;
+    a{
+         color: rgba(84, 84, 84, 0.901961);
+    }
+}
+
+.item{
+    color: $darkGray;
+    font-family: proxima-nova;
     display: inline-block;
- }
 
- #headerNav nav .subnav{
-    // background-color: transparent;
-    text-align: left;
-    position: absolute;
-    right: 0;
- }
+    a{
+      // color: rgba(84, 84, 84, 0.901961);
 
- .collection.contact a {
-    color: #000;
-    background-color: transparent;
- }
+    }
+}
+//squarespace//
+// #logoWrapper{
+// 	display: table-cell;
+//     vertical-align: middle;
+//     width: vw(px,140);
+// }
 
+// #logoImage{
+// 	width: vw(px,140);
+// 	margin: 0;
+//     font-size: 0;
+//     max-width: 100%;
+// }
+
+// #header #mainNavWrapper{
+// 	position: relative;
+//     z-index: 1000;
+// }
+
+// #headerNav{
+// 	text-align: right;
+// 	box-sizing: border-box;
+//     display: table-cell;
+//     vertical-align: middle;
+// 	nav a, #headerNav nav a, nav .folder-toggle{
+// 	display: block;
+//     padding: .5em 1.5em;
+// 	font-family: "proxima-nova";
+//     font-size: vw(px,13);
+//     text-transform: uppercase;
+//     text-decoration: none;
+//     letter-spacing: vw(px,2);
+//     font-weight: 600;
+//     font-style: normal;
+//     line-height: 1em;
+//     color: rgba(84,84,84,.9);
+// 	}
+// }
+
+
+// .header-inner{
+// 	padding: vw(px, 20);
+//     display: table;
+//     width: 100%;
+//     -webkit-box-sizing: border-box;
+//     -moz-box-sizing: border-box;
+//     box-sizing: border-box;
+//     -webkit-animation: header-anim 1s ease-in-out;
+//     animation: header-anim 1s ease-in-out;
+// }
+
+// .nav-wrapper nav>div {
+//     vertical-align: inherit;
+// }
+
+//  #headerNav nav>div:not(.folder):last-child a:hover{
+//     background-color: transparent;
+//     color: $blue;
+//  }
+// .force-mobile-nav #mainNavWrapper nav div{
+//     // display: inline-block;
+//     // vertical-align: middle;
+//     margin: 0;
+// }
+// .force-mobile-nav #mainNavWrapper nav{
+//     display: block;
+//     padding: 0;
+// }
+
+// .mobile-nav-toggle{
+//     display: none;
+// }
+
+// #mainNavigation > .collection{
+//     display: inline-block;
+// }
+// #headerNav nav .active>a{
+//     padding: 1em 1.5em; 
+// }
+
+// .force-mobile-nav #mainNavWrapper nav div a{
+//     padding: .5em 1.5em;
+// }
+//  .force-mobile-nav #mainNavWrapper{
+//     z-index: 100;
+//     position: inherit;
+//     transform: initial;
+//     width: 100%;
+//     background-color: transparent;
+//     text-align: right;
+//  }
+//  .force-mobile-nav #mainNavWrapper nav div a, .force-mobile-nav #mainNavWrapper nav div .folder-toggle{
+//     padding: .5em 1.5em;
+//  }
+
+
+//  .force-mobile-nav .mobile-nav-toggle, .mobile-nav-toggle.fixed-nav-toggle{
+//     display: none;
+//  }
+//   .nav-wrapper .folder .subnav{
+//     padding: 1em 0;
+//     display: inline-block;
+//   }
+//  .right .subnav{
+//     visibility: hidden;
+//  }
+
+//  .folder{
+//     position: relative;
+//     display: inline-block;
+//  }
+
+//  #headerNav nav .subnav{
+//     // background-color: transparent;
+//     text-align: left;
+//     position: absolute;
+//     right: 0;
+//  }
+
+//  .collection.contact a {
+//     color: #000;
+//     background-color: transparent;
+//  }
+
+//end//
 // .subnav{
 // 	.right{
 // 		left: auto;

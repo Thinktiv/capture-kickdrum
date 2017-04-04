@@ -19,7 +19,6 @@ $(document).ready(function() {
     })
     //show selected
     const slide = document.querySelector('.'+this.dataset.slide);
-    console.log('this',this);
     slide.style.setProperty('opacity', '1');
 
     $('.icons div').each(function(i, icon){
