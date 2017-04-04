@@ -84,7 +84,9 @@
     animation: header-anim 1s ease-in-out;
 }
 
-
+.nav-wrapper nav>div {
+    vertical-align: inherit;
+}
 
  #headerNav nav>div:not(.folder):last-child a:hover{
     background-color: transparent;
@@ -139,7 +141,7 @@
  }
 
  .folder{
-    position: absolute;
+    position: relative;
     display: inline-block;
  }
 
@@ -150,7 +152,7 @@
     right: 0;
  }
 
- .contact a {
+ .collection.contact a {
     color: #000;
     background-color: transparent;
  }
