@@ -88,12 +88,26 @@
     background-color: transparent;
     color: $blue;
  }
+.force-mobile-nav #mainNavWrapper nav div{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+.force-mobile-nav #mainNavWrapper nav{
+    display: block;
+    padding: 0;
+}
 
+.force-mobile-nav #mainNavWrapper nav div a{
+    padding: .5em 1.5em;
+}
  .force-mobile-nav #mainNavWrapper{
     z-index: 100;
-    position: relative;
+    position: inherit;
     transform: initial;
     width: 100%;
+    background-color: transparent;
+    text-align: right;
  }
 
  .force-mobile-nav .mobile-nav-toggle, .mobile-nav-toggle.fixed-nav-toggle{
