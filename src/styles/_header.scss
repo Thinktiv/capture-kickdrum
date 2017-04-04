@@ -68,7 +68,7 @@
     text-align: left;
     background-color: $white;
     padding: 1em 0px;
-    top: 31px;
+    top: 28px;
     width: 400px;
     z-index: 100;
     right: 10px;
@@ -87,9 +87,10 @@
         line-height: 1em;
         color: rgba(84, 84, 84, 0.901961);
         text-decoration: none;
-        &:hover {
-            color: $blue;
-        }
+
+    }
+    &:hover a {
+      color: $blue;
     }
 }
 
@@ -163,9 +164,10 @@
     -webkit-font-smoothing: subpixel-antialiased;
     color: rgba(84, 84, 84, 0.901961);
     text-decoration: none;
-    background-color: transparent !important;
-    padding: 1em 1.5em !important;
+    margin-left: 1em;
+    padding: 1em 0;
     a {
+        background-color: transparent !important;
         color: rgba(84, 84, 84, 0.901961);
     }
 }
